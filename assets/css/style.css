@@ -31,7 +31,7 @@ body {
   position: relative;
 }
 .sub-containers {
-  width: 80%;
+  width: 90%;
   height: fit-content;
   background-color: var(--section-bg-color);
   position: absolute;
@@ -43,11 +43,11 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .age-cal-section {
-  /*width: 70%;*/
   margin: 2.2rem;
 }
 p.date-format {
-  margin: 5px 0 13px 0;
+  margin: 5px 0 12px 0;
+  font-size: 0.93rem;
 }
 /* ------input section------------ */
 #input {
@@ -96,6 +96,7 @@ p.date-format {
 }
 .h2-title {
   margin: 6px 0;
+  font-size: 1.3rem;
 }
 .btn button {
   width: 100%;
@@ -114,6 +115,7 @@ p.date-format {
 }
 .p-title {
   margin: 12px 0px 0px;
+  font-size: 0.91rem;
 }
 .p-title a {
   text-decoration: none;
@@ -121,11 +123,13 @@ p.date-format {
   font-size: 1.2rem;
 }
 .last-word {
-  margin: 18px 0px 0px;
+  margin: 15px 0px 0px;
+  font-size: 0.93rem;
 }
 
 #output_result #nid_application_output {
-  margin: 15px 0;
+  margin: 13px 0;
+  font-size: 0.95rem;
 }
 #nid_application_output #nid_application_url {
   text-decoration: none;
@@ -142,11 +146,33 @@ p.date-format {
   #input .x_line {
     width: 53%;
   }
+  p.date-format {
+    margin: 5px 0 14px 0;
+    font-size: 1rem;
+  }
+  .h2-title {
+    font-size: 1.4rem;
+  }
+  .p-title {
+    margin: 15px 0px 0px;
+    font-size: 1rem;
+  }
+  #output_result #nid_application_output {
+    margin: 13px 0;
+    font-size: 1.1rem;
+  }
+  .last-word {
+    margin: 15px 0px 0px;
+    font-size: 1rem;
+  }
 }
 /* ------------screen size (lg) 976px-------------- */
 @media only screen and (min-width: 976px) {
   .sub-containers {
     width: 60%;
+  }
+  .h2-title {
+    font-size: 1.5rem;
   }
 }
 /*----------screen size (xl) 1440px---------*/
