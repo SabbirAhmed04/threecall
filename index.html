@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en,bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Favicon/shortcut image-->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Threecall.js</title>
+    <meta name="title" content="Threecall-js" />
+    <meta
+      name="keywords"
+      content="threecalljs, threecall.js, Sabbir Ahmed
+    Github"
+    />
+    <meta
+      name="description"
+      content="Threecall.js is a small calculator that can be used to calculate age only, but after a few days it will be discovered that it also has two calculators and this calculator will be used by calling three functions, so its name is threecall.js."
+    />
+    <!--open graph / Facebook-->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Threecall.js" />
+    <meta
+      property="og:descriptioin"
+      content="Threecall.js is a small calculator that can be used to calculate age only, but after a few days it will be discovered that it also has two calculators and this calculator will be used by calling three functions, so its name is threecall.js."
+    />
+    <meta property="og:image" content="/assets/image/og-image.png" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-containers">
+      <div class="rose-color"></div>
+      <div class="sub-containers">
+        <div class="age-cal-section">
+          <div id="output_result">
+            <h2 class="h2-title" id="output">আপনার বয়স কত হয়েছে?</h2>
+            <h4 id="nid_application_output">
+              আপনি কি জাতীয় পরিচয়পত্র নিতে পারবেন দেখে নিন।
+            </h4>
+            <p class="date-format">
+              আপনার জন্ম মাস, দিন, বছর (Month, Day, Year) নিচে দিন
+            </p>
+          </div>
+          <div id="input">
+            <select name="months" id="user_month">
+              <option value="0">January</option>
+              <option value="1">February</option>
+              <option value="2">March</option>
+              <option value="3">April</option>
+              <option value="4">May</option>
+              <option value="5">June</option>
+              <option value="6">July</option>
+              <option value="7">August</option>
+              <option value="8">September</option>
+              <option value="9">October</option>
+              <option value="10">November</option>
+              <option value="11">December</option>
+            </select>
+            <select name="days" id="user_day" onmouseover="removeDays()">
+              <option value="1">01</option>
+              <option value="2">02</option>
+              <option value="3">03</option>
+              <option value="4">04</option>
+              <option value="5">05</option>
+              <option value="6">06</option>
+              <option value="7">07</option>
+              <option value="8">08</option>
+              <option value="9">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option td="twoenty_eight" value="28">28</option>
+              <option id="twoenty_nine" value="29">29</option>
+              <option id="thirty" value="30">30</option>
+              <option id="thirty_one" value="31">31</option>
+            </select>
+            <input type="text" id="user_year" placeholder="Birth Year" />
+            <div class="x_line"></div>
+          </div>
+          <div class="btn">
+            <button onclick="threecalljs()">ফলাফল</button>
+          </div>
+          <p class="p-title">
+            আমার ফেইসবুক প্রোফাইল লিংক
+            <a href="https://www.facebook.com/04.sabbirahmed" target="_blank"
+              >Sabbir Ahmed</a
+            >
+          </p>
+          <p class="last-word">
+            শেষের কথা এটা javascript এর কোনো Library বা Framework নয় । এটা
+            সামান্য একটা বয়স (age) ক্যালকুলেটর আমি আরও দুটি ক্যালকুলেটর খুবি
+            তারা তারি যুক্ত করতে যাচ্ছি । মোট তিনটি ক্যালকুলেটর থাকবে এবং এই
+            তিনটা ক্যালকুলেটর খুবই সামান্য তিনটি Js এর function দিয়ে ডেকে
+            (Call/Invoke) হিশাব করবে তাই এর নাম রাখা হয়েছে threecall.js
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
+</html>

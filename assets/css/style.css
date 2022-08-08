@@ -1,0 +1,157 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --theme-bg-color: #0f172a;
+  --section-bg-color: #1e293b;
+  --text-color: #e2e8f0;
+  --btn-hover-color: #0ea5e9;
+  --button-color: #00a8ff;
+  --border-color: #075985;
+  --input-color: #20bf6b;
+  --input-text-color: #e55039;
+  --screen-sm: 480px;
+  --screen-md: 768px;
+  --screen-lg: 976px;
+  --screen-xl: 1440;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Ubuntu Mono", monospace;
+}
+.main-containers {
+  background-color: var(--theme-bg-color);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.sub-containers {
+  width: 80%;
+  height: fit-content;
+  background-color: var(--section-bg-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-color);
+  border-radius: 6.7px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.age-cal-section {
+  /*width: 70%;*/
+  margin: 2.2rem;
+}
+p.date-format {
+  margin: 5px 0 13px 0;
+}
+/* ------input section------------ */
+#input {
+  width: 100%;
+}
+#input #user_month,
+#input #user_day,
+#input #user_year {
+  padding: 6.5px 10px;
+  outline: none;
+  border: none;
+  border-radius: 4.5px;
+  background: none;
+  font-weight: 600;
+  color: var(--input-text-color);
+}
+#input > select {
+  color: var(--text-color);
+  font-size: 1rem;
+}
+#input select option {
+  font-size: 1rem;
+  color: var(--theme-bg-color);
+  background-color: var(--text-color);
+}
+#input #user_month {
+  width: 25%;
+}
+#input #user_day {
+  width: 25%;
+}
+#input #user_year {
+  width: 42.4%;
+  font-size: 1rem;
+  position: relative;
+}
+#input .x_line {
+  width: 58%;
+  height: 2px;
+  background-color: var(--input-text-color);
+  transition: 0.4s ease-in-out;
+  border-radius: 50px;
+}
+#input #user_year:focus ~ .x_line {
+  width: 100%;
+}
+.h2-title {
+  margin: 6px 0;
+}
+.btn button {
+  width: 100%;
+  padding: 6.5px 17px;
+  font-size: 1.1rem;
+  background-color: var(--button-color);
+  color: var(--text-color);
+  margin: 11.5px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.btn button:hover {
+  background-color: var(--btn-hover-color);
+}
+.p-title {
+  margin: 12px 0px 0px;
+}
+.p-title a {
+  text-decoration: none;
+  color: var(--input-color);
+  font-size: 1.2rem;
+}
+.last-word {
+  margin: 18px 0px 0px;
+}
+
+#output_result #nid_application_output {
+  margin: 15px 0;
+}
+#nid_application_output #nid_application_url {
+  text-decoration: none;
+  color: var(--input-color);
+}
+/* ---------color-effects----------- */
+
+/* -----------media query----------- */
+/* -----scree size (md) 768px---------- */
+@media only screen and (min-width: 768px) {
+  .sub-containers {
+    width: 70%;
+  }
+  #input .x_line {
+    width: 53%;
+  }
+}
+/* ------------screen size (lg) 976px-------------- */
+@media only screen and (min-width: 976px) {
+  .sub-containers {
+    width: 60%;
+  }
+}
+/*----------screen size (xl) 1440px---------*/
+@media only screen and (min-width: 1280px) {
+  .sub-containers {
+    max-width: 880px;
+  }
+}
