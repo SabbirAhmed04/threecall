@@ -43,7 +43,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .age-cal-section {
-  margin: 2.2rem;
+  margin: 1.2rem;
 }
 p.date-format {
   margin: 5px 0 12px 0;
@@ -135,8 +135,6 @@ p.date-format {
   text-decoration: none;
   color: var(--input-color);
 }
-/* ---------color-effects----------- */
-
 /* -----------media query----------- */
 /* -----scree size (md) 768px---------- */
 @media only screen and (min-width: 768px) {
@@ -165,6 +163,9 @@ p.date-format {
     margin: 15px 0px 0px;
     font-size: 1rem;
   }
+  .age-cal-section {
+    margin: 1.7rem;
+  }
 }
 /* ------------screen size (lg) 976px-------------- */
 @media only screen and (min-width: 976px) {
@@ -173,6 +174,9 @@ p.date-format {
   }
   .h2-title {
     font-size: 1.5rem;
+  }
+  .age-cal-section {
+    margin: 2rem;
   }
 }
 /*----------screen size (xl) 1440px---------*/
