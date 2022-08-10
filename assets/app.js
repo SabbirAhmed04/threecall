@@ -1,11 +1,16 @@
 function removeDays(){
     let userSelectMonth = document.getElementById("user_month").value;
-    if(userSelectMonth == 1 || userSelectMonth == 3 || userSelectMonth == 5 || userSelectMonth == 8 || userSelectMonth == 9 || userSelectMonth == 10){
+    if(userSelectMonth == 1 || userSelectMonth == 3 || userSelectMonth == 5 || userSelectMonth == 8 || userSelectMonth == 10){
         document.getElementById("thirty_one").style.display = "none";
+    }else{
+        document.getElementById("thirty_one").style.display = "block";
     };
     if(userSelectMonth == 1){
         document.getElementById("thirty").style.display = "none";
         document.getElementById("twoenty_nine").style.display = "none";
+    }else{
+        document.getElementById("thirty").style.display = "block";
+        document.getElementById("twoenty_nine").style.display = "block";
     };
 };
 function threecalljs(){
